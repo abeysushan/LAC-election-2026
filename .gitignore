@@ -17,3 +17,6 @@ _site/
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
 FETCH_HEAD
+.DS_Store
+renv/library/
+renv/staging/
