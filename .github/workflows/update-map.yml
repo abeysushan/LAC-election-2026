@@ -44,11 +44,9 @@ jobs:
             libtiff5-dev \
             libjpeg-dev
 
-      - name: Install renv
-        run: Rscript -e 'install.packages("renv")'
 
       - name: Restore packages
-        run: Rscript -e 'renv::restore()'
+        run: Rscript -e 'Sys.setenv(RENV_CONFIG_INSTALL_STAGED = FALSE); renv::restore(rebuild = TRUE)'
         
       - name: Run script
         run: Rscript scripts/mapscript.R
