@@ -30,13 +30,18 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y \
             libgdal-dev \
+            gdal-bin \
             libgeos-dev \
             libproj-dev \
             libudunits2-dev \
+            libcurl4-openssl-dev \
+            libpng-dev \
             libfontconfig1-dev \
             libfreetype6-dev \
             libharfbuzz-dev \
-            libfribidi-dev
+            libfribidi-dev \
+            libtiff5-dev \
+            libjpeg-dev
 
       - name: Install renv
         run: Rscript -e 'install.packages("renv")'
