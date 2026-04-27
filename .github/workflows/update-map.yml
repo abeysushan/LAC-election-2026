@@ -21,7 +21,7 @@ jobs:
         with:
           r-version: '4.5.2'
           
-      - name: Setup renv (with cache)
+      - name: Setup renv with cache
           uses: r-lib/actions/setup-renv@v2
       
       
