@@ -22,7 +22,7 @@ jobs:
           r-version: '4.5.2'
           
       - name: Setup renv with cache
-          uses: r-lib/actions/setup-renv@v2
+        uses: r-lib/actions/setup-renv@v2
       
       
       - name: Install system dependencies
@@ -47,10 +47,10 @@ jobs:
       - name: Run script
         run: Rscript scripts/mapscript.R
 
-- name: Commit and push if changed
-  run: |
-    git config user.name "github-actions"
-    git config user.email "actions@github.com"
-    git add -A
-    git diff --cached --quiet || git commit -m "Auto update map"
-    git push
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Auto update map"
+          git push
