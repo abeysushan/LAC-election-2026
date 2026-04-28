@@ -3,7 +3,7 @@ name: Update Election Map
 on:
   schedule:
     - cron: "0 */6 * * *"   # every 6 hours
-  workflow_dispatch:         # allows manual run 
+  workflow_dispatch:         # allows manual run
 
 permissions:
   contents: write
