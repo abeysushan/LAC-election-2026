@@ -55,7 +55,8 @@ m <- leaflet(map_results, height = "90vh") |>
     fillOpacity = 0.7,
     popup = ~ paste0(
       "<strong>", Asmbly_Con, "</strong><br>",
-      "Winner: ", Win
+      "Winner: ", Win, "<br>",
+      "Party: ", Party
     )
   )
 
@@ -67,7 +68,7 @@ m <- m |>
     position = "topright"
   ) |>
   addControl(
-    "<em>Data source: @abeysushan</em>",
+    "<em>Data source: @ECI</em>",
     position = "bottomright"
   ) |>
   addControl(
