@@ -55,7 +55,7 @@ m <- leaflet(map_results, height = "90vh") |>
     fillOpacity = 0.7,
     popup = ~ paste0(
       "<strong>", Asmbly_Con, "</strong><br>",
-      "Winner: ", Win, "<br>",
+      "Winner: ", Winner, "<br>",
       "Party: ", Party
     )
   )
